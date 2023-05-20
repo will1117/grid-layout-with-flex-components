@@ -1,0 +1,55 @@
+/* Full window, browser zoom set to 100% */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    padding: 0 13rem 0 13rem;
+    /* Adds space at bottom of page */
+    margin-bottom: 500px;
+  }
+
+  /* Applies to container with boxes */
+  .emojis {
+    display: grid;
+    grid-gap: 1.3rem;
+    /* 2 rows and 2 columns that take up 1 fraction of space */
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* Box height = 250px */
+    height: 250px;
+  }
+
+
+  /* Applies to each individual box */
+  .emoji {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .emoji a {
+    display: flex;
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    /* Will align button to bottom */
+    margin-top: auto;
+  }
+  
+  .icon {
+    display: flex;
+    font-size: 4rem;
+    align-self: center;
+    margin-bottom: 15px;
+    /* Re-arranges emojis on top of header */
+    order: -1;
+  }
